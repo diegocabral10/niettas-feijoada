@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Nietta's Feijoada</title>
+
+  <!-- Fonte -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #120b06;
+      --primary: #d8973c;
+      --accent: #f4c16c;
+      --text: #fffbe9;
+      --muted: #c7bda8;
+      --card: #1c120a;
+      --radius: 18px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Poppins", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    img {
+      width: 100%;
+      display: block;
+      border-radius: 18px;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      background: rgba(0, 0, 0, .85);
+      padding: 12px 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      border-bottom: 1px solid rgba(255, 255, 255, .15);
+      z-index: 10;
+    }
+
+    .brand {
+      font-weight: 700;
+      font-size: 18px;
+    }
+
+    .btn-header {
+      padding: 8px 16px;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 600;
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      color: #2c1706;
+      border: none;
+      cursor: pointer;
+      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.6);
+    }
+
+    .container {
+      width: 92%;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 28px 0 30px;
+    }
+
+    .hero h1 {
+      font-size: 28px;
+      line-height: 1.1;
+      margin-bottom: 10px;
+    }
+
+    .hero h1 span {
+      color: var(--primary);
+    }
+
+    .badge {
+      display: inline-block;
+      font-size: 12px;
+      background: rgba(0, 0, 0, 0.5);
+      border-radius: 999px;
+      padding: 4px 10px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 14px;
+      color: var(--muted);
+      margin-bottom: 14px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      padding: 12px 20px;
+      border-radius: 30px;
+      color: #2c1706;
+      font-weight: 700;
+      margin: 8px 0;
+      text-decoration: none;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.55);
+      transform: translateY(0) scale(1);
+      transition: transform 0.18s ease, box-shadow 0.18s ease;
+      font-size: 14px;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px) scale(1.03);
+      box-shadow: 0 14px 30px rgba(0, 0, 0, 0.7);
+    }
+
+    section {
+      padding: 28px 0;
+    }
+
+    h2 {
+      font-size: 22px;
+      margin-bottom: 12px;
+    }
+
+    .card {
+      background: var(--card);
+      border-radius: var(--radius);
+      padding: 16px 14px;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    .card b {
+      color: var(--text);
+    }
+
+    .info-rapida p {
+      line-height: 1.7;
+      font-size: 14px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 18px 0 20px;
+      font-size: 13px;
+      opacity: .85;
+      border-top: 1px solid rgba(255, 255, 255, .15);
+      margin-top: 10px;
+    }
+
+    .whatsapp-float {
+      position: fixed;
+      right: 14px;
+      bottom: 14px;
+      width: 58px;
+      height: 58px;
+      background: #25d366;
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 30px;
+      text-decoration: none;
+      box-shadow: 0 0 18px #000;
+      z-index: 20;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 24px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Botão flutuante WhatsApp -->
+  <a class="whatsapp-float"
+     href="https://wa.me/5592992199283?text=Olá,%20quero%20pedir%20feijoada!">
+    💬
+  </a>
+
+  <header>
+    <div class="brand">Nietta's Feijoada</div>
+    <a class="btn-header"
+       href="https://wa.me/5592992199283?text=Quero%20fazer%20meu%20pedido%20de%20feijoada">
+      Pedir no WhatsApp
+    </a>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero container">
+    <span class="badge">Manaus • Bairro Nova Cidade</span>
+
+    <h1>A melhor <span>feijoada</span> da Zona Norte</h1>
+
+    <p>
+      Feijoada servida <b>todos os sábados, das 10h às 14h</b>.<br>
+      Porção individual completa feita com calma, feijão preto bem cozido,
+      linguiça, carnes selecionadas, couve, farofa, torresmo e laranja.
+    </p>
+
+    <a class="btn"
+       href="https://wa.me/5592992199283?text=Quero%20reservar%20minha%20feijoada">
+      Reservar minha feijoada
+    </a>
+  </section>
+
+  <!-- IMAGEM PRINCIPAL -->
+  <section class="container">
+    <img src="img/feijoada-hero.png" alt="Feijoada completa Nietta's com acompanhamentos">
+  </section>
+
+  <!-- BLOCO COM A RESPOSTA 2 (INFORMAÇÕES RÁPIDAS) -->
+  <section class="container info-rapida">
+    <h2>Informações rápidas</h2>
+    <div class="card">
+      <p>
+        📅 Todo sábado • <b>10h às 14h</b><br>
+        🍛 Feijoada <b>R$ 20</b> | 🍹 Caipirinha <b>R$ 5</b><br>
+        💳 Pagamento via <b>PIX</b> (chave no WhatsApp)<br>
+        📩 Envie o comprovante e <b>preparamos sua feijoada na hora!</b><br>
+        📍 Retirada no Nova Cidade ou entrega*<br>
+        <span style="font-size:12px; opacity:.85;">* entrega com taxa, conforme o bairro</span>
+      </p>
+    </div>
+  </section>
+
+  <!-- CARDÁPIO -->
+  <section class="container">
+    <h2>Cardápio</h2>
+
+    <div class="card">
+      <p>
+        <b>Feijoada individual completa — R$ 20,00</b><br>
+        Feijão preto, linguiça, carne, couve, farofa, torresmo e laranja.
+      </p>
+
+      <br>
+
+      <p>
+        <b>Caipirinha da Nietta — R$ 5,00</b><br>
+        Limão, cachaça gelada e açúcar no ponto.
+      </p>
+
+      <br>
+
+      <p>
+        💳 Pagamento via <b>PIX</b>.<br>
+        A chave PIX é enviada pelo WhatsApp no momento do pedido.<br><br>
+        📩 Após o pagamento, <b>envie o comprovante</b> pelo WhatsApp.<br>
+        Assim que confirmarmos, <b>iniciamos o preparo da sua feijoada</b>
+        para retirada ou entrega.
+      </p>
+
+      <br>
+
+      <a class="btn"
+         href="https://wa.me/5592992199283?text=Quero%20saber%20os%20detalhes%20da%20feijoada%20e%20pagar%20via%20PIX">
+        Falar sobre PIX e pedir agora
+      </a>
+    </div>
+
+    <div style="margin-top:18px;">
+      <img src="img/feijoada-close.png" alt="Feijoada com linguiça e torresmo por cima">
+    </div>
+  </section>
+
+  <!-- BLOCO FEIJOADA DE VERDADE -->
+  <section class="container">
+    <h2>Feijoada de verdade</h2>
+
+    <div class="card">
+      <p>
+        🔥 Feijoada preparada com carinho e tempo, no estilo caseiro.<br>
+        Ideal para o almoço de sábado com a família na Zona Norte de Manaus.
+      </p>
+    </div>
+
+    <div style="margin-top:16px;">
+      <img src="img/feijoada-steam.png" alt="Feijoada fumegante pronta para servir">
+    </div>
+  </section>
+
+  <footer>
+    Nietta’s Feijoada • Manaus – Bairro Nova Cidade<br>
+    Sábados • 10h às 14h • Pagamento via PIX<br>
+    WhatsApp: (92) 99219-9283
+  </footer>
+
+</body>
+</html>
